@@ -22,13 +22,3 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
-
-apply plugin: 'maven-publish'
-publishing {
-    publications {
-        maven(MavenPublication) {
-            groupId = 'com.pc.android'
-            artifactId = 'sdk'
-        }
-    }
-}
