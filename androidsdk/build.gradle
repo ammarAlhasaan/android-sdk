@@ -39,8 +39,6 @@ task sourcesJar(type: Jar) {
 
 artifacts {
     archives sourcesJar
-}
-artifacts {
     archives file('build/outputs/aar/androidsdk-release.aar')
 }
 dependencies {
