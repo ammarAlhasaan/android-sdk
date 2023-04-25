@@ -44,6 +44,7 @@ dependencies {
 //    implementation 'androidx.appcompat:appcompat:1.4.1'
 //    implementation 'com.google.android.material:material:1.5.0'
 
+//    implementation 'com.github.ammarAlhasaan:android-sdk:Tag'
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
@@ -62,9 +63,9 @@ afterEvaluate {
             // Creates a Maven publication called "release".
             release(MavenPublication) {
                 from components.release
-                groupId = 'com.github.pointcheckout'
+                groupId = 'com.github.ammarAlhasaan'
                 artifactId = 'android-sdk'
-                version = '1.4'
+                version = '1.5'
             }
         }
     }
