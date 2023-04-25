@@ -1,16 +1,19 @@
-apply plugin: 'com.android.library'
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'maven-publish'
+}
+group = 'com.github.pointcheckout'
+version = '1.4.1'
 
 android {
-    compileSdkVersion 26
-
+    compileSdkVersion 31
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 26
-        versionCode 1
-        versionName "1.4"
+        targetSdkVersion 31
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        // testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
 
@@ -19,8 +22,14 @@ android {
             // Enables proguard
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            consumerProguardFiles 'proguard-rules.pro'
         }
     }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    namespace 'com.pc.android.sdk'
 
 }
 
