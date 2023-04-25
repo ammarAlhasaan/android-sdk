@@ -23,6 +23,13 @@ android {
         }
     }
 
+    sourceSets {
+        main {
+            java.srcDirs('src/main/java')
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+        }
+    }
+
 }
 
 task sourcesJar(type: Jar) {
@@ -33,7 +40,9 @@ task sourcesJar(type: Jar) {
 artifacts {
     archives sourcesJar
 }
-
+artifacts {
+    archives file('build/outputs/aar/androidsdk-release.aar')
+}
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
