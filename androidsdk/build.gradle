@@ -1,9 +1,19 @@
-apply plugin: 'com.android.library'
 
+plugins {
+    id "com.android.library"
+    id "maven-publish"
+    id "kotlin-android"
+}
 android {
     compileSdkVersion 33
 
-
+    publishing {
+        singleVariant('release') {
+            withSourcesJar()
+            withJavadocJar()
+        }
+        // ...
+    }
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 33
