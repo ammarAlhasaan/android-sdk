@@ -1,5 +1,5 @@
 apply plugin: 'maven-publish'
-group = 'com.pc.android.pcandroidsdk'
+group = 'com.github.ammarAlhasaan'
 
 buildscript {
     ext.kotlin_version = '1.6.21'
