@@ -5,13 +5,15 @@ package com.pc.android.sdk.internal;
 
 import android.content.Context;
 import android.content.DialogInterface;
-import android.support.v7.app.AlertDialog;
+//import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.webkit.CookieManager;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+
+import androidx.appcompat.app.AlertDialog;
 
 import com.pc.android.sdk.Environment;
 import com.pc.android.sdk.PointCheckoutEventListener;
