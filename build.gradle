@@ -1,3 +1,5 @@
+apply plugin: 'maven-publish'
+group = 'com.pc.android.pcandroidsdk'
 
 buildscript {
     ext.kotlin_version = '1.6.21'
@@ -23,7 +25,6 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
-apply plugin: 'maven-publish'
 publishing {
     publications {
         maven(MavenPublication) {
