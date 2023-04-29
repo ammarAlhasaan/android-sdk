@@ -34,3 +34,4 @@ publishing {
         }
     }
 }
+apply from: 'https://raw.githubusercontent.com/sky-uk/gradle-maven-plugin/master/gradle-mavenizer.gradle'
